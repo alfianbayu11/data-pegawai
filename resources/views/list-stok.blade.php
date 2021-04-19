@@ -1,4 +1,4 @@
-<span class="d-block p-2 bg-dark text-white">
+<span class="d-block p-2 bg-success text-white">
   <h3 style="text-align: center">Daftar Pegawai</h3>
 </span><br>
 <div class="container">
