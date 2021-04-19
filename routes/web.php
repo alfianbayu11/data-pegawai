@@ -16,19 +16,20 @@ use App\Http\Controllers\MahasiswaController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('/user', [UserController::class, 'home']);
+// Route::get('/user', [UserController::class, 'home']);
 
-Route::get('/user/{name}', [UserController::class, 'setName']);
+// Route::get('/user/{name}', [UserController::class, 'setName']);
 
-Route::post('/mahasiswa', [MahasiswaController::class, 'save']);
+// Route::post('/mahasiswa', [MahasiswaController::class, 'save']);
 
-Route::get('/mahasiswa', function () {
-    return view('add-mahasiswa');
-});
+// Route::get('/mahasiswa', function () {
+//     return view('add-mahasiswa');
+// });
+Route::get('/', [StokController::class, 'list']);
 Route::get('/list-stok', [StokController::class, 'list']);
 
 Route::get('/tambah-stok', function () {
